@@ -47,13 +47,10 @@ async function getDrawStats() {
 }
 
 async function getWinners() {
-    const lastBiWeeklyWinner = await contract.methods.getLastBiWeeklyWinner().call();
-    const lastSemiQuarterlyWinner = await contract.methods.getLastSemiQuarterlyWinner().call();
-    const lastAnnualWinner = await contract.methods.getLastAnnualWinner().call();
-
-    document.getElementById('lastBiWeeklyWinner').innerText = lastBiWeeklyWinner;
-    document.getElementById('lastSemiQuarterlyWinner').innerText = lastSemiQuarterlyWinner;
-    document.getElementById('lastAnnualWinner').innerText = lastAnnualWinner;
+    const winners = await contract.methods.getWinners().call();
+    document.getElementById('lastBiWeeklyWinner').innerText = winners[0];
+    document.getElementById('lastSemiQuarterlyWinner').innerText = winners[1];
+    document.getElementById('lastAnnualWinner').innerText = winners[2];
 }
 
 window.addEventListener('load', () => {
@@ -63,4 +60,3 @@ window.addEventListener('load', () => {
         alert('MetaMask not detected!');
     }
 });
-
