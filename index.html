@@ -12,8 +12,38 @@
     <div class="container">
         <h1>PrizePool Lottery</h1>
         <button id="connectButton" class="connect-button">Connect MetaMask</button>
-        <div id="account"></div>
-        <div id="eligibility"></div>
+        <div id="account" class="account-info"></div>
+        <div id="eligibility" class="eligibility-info"></div>
+        <div class="overview">
+            <h2>Overview</h2>
+            <p>The PrizePool Token is a special kind of cryptocurrency that lets you participate in three different types of lotteries: bi-weekly, semi-quarterly, and annual. By holding enough tokens, you can automatically enter these lotteries and have a chance to win prizes from the prize pools.</p>
+            <h2>How It Works</h2>
+            <h3>Buying Tokens</h3>
+            <p>You purchase PrizePool Tokens (PPL) just like you would buy any other cryptocurrency.</p>
+            <h3>Holding Tokens</h3>
+            <p>To be eligible for the lottery, you need to hold at least 5000 tokens.</p>
+            <h3>Tax on Transactions</h3>
+            <p>Every time someone transfers tokens (buys, sells, or sends them), a small fee (5%) is taken from the transaction. This fee is split and added to three different prize pools: bi-weekly, semi-quarterly, and annual.</p>
+            <h3>Prize Pools</h3>
+            <ul>
+                <li>Bi-Weekly Pool: Gets a small portion of each transaction.</li>
+                <li>Semi-Quarterly Pool: Gets a bit more.</li>
+                <li>Annual Pool: Gets the largest portion.</li>
+            </ul>
+            <h3>Eligibility</h3>
+            <p>If your balance is 5000 tokens or more, you are automatically added to the list of eligible participants for the lottery. If your balance drops below 5000 tokens, you are removed from the list.</p>
+            <h3>Choosing Winners</h3>
+            <ul>
+                <li>Bi-Weekly Lottery: Every two weeks, one eligible holder is randomly selected to win the entire bi-weekly prize pool.</li>
+                <li>Semi-Quarterly Lottery: Every three months, one eligible holder is randomly selected to win the entire semi-quarterly prize pool.</li>
+                <li>Annual Lottery: Once a year, one eligible holder is randomly selected to win the entire annual prize pool.</li>
+            </ul>
+            <h3>Winning</h3>
+            <p>If you win, the prize amount is transferred to your wallet. The winner is chosen randomly from the list of eligible holders, with a slight bias towards larger holders to increase their chances slightly.</p>
+            <h3>Keeping Track</h3>
+            <p>The contract keeps track of when the last distributions were made and ensures the lotteries happen on schedule.</p>
+            <p>In essence, by holding enough PrizePool Tokens, you automatically participate in regular lotteries without having to do anything extra. This encourages people to buy and hold the tokens, increasing their chances of winning substantial prizes over time.</p>
+        </div>
         <div class="stats">
             <h2>Draw Stats</h2>
             <p>Bi-Weekly Pool: <span id="biWeeklyPool"></span></p>
