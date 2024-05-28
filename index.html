@@ -11,18 +11,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>PrizePool Lottery Stats</h1>
+        <h1>PrizePool Lottery</h1>
         <button id="connectButton" class="connect-button">Connect MetaMask</button>
         <div id="account"></div>
         <div id="eligibility"></div>
-        <h2>Draw Stats</h2>
-        <p>Bi-Weekly Pool: <span id="biWeeklyPool"></span></p>
-        <p>Semi-Quarterly Pool: <span id="semiQuarterlyPool"></span></p>
-        <p>Annual Pool: <span id="annualPool"></span></p>
-        <h2>Last Distribution Dates</h2>
-        <p>Bi-Weekly: <span id="lastBiWeekly"></span></p>
-        <p>Semi-Quarterly: <span id="lastSemiQuarterly"></span></p>
-        <p>Annual: <span id="lastAnnual"></span></p>
+        <div class="stats">
+            <h2>Draw Stats</h2>
+            <p>Bi-Weekly Pool: <span id="biWeeklyPool"></span></p>
+            <p>Semi-Quarterly Pool: <span id="semiQuarterlyPool"></span></p>
+            <p>Annual Pool: <span id="annualPool"></span></p>
+        </div>
+        <div class="winners">
+            <h2>Winners of Last Draw</h2>
+            <p>Bi-Weekly: <span id="lastBiWeeklyWinner"></span></p>
+            <p>Semi-Quarterly: <span id="lastSemiQuarterlyWinner"></span></p>
+            <p>Annual: <span id="lastAnnualWinner"></span></p>
+        </div>
+        <div class="distributions">
+            <h2>Last Distribution Dates</h2>
+            <p>Bi-Weekly: <span id="lastBiWeekly"></span></p>
+            <p>Semi-Quarterly: <span id="lastSemiQuarterly"></span></p>
+            <p>Annual: <span id="lastAnnual"></span></p>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
