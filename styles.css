@@ -29,6 +29,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: background-color 0.3s;
 }
 
 .connect-button:hover {
@@ -38,10 +39,25 @@ body {
 h1, h2 {
     color: #007bff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.stats, .winners, .distributions {
+.stats, .winners, .distributions, .overview {
     margin-bottom: 20px;
+}
+
+.account-info, .eligibility-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
